@@ -2,8 +2,8 @@
 
 TO access the VM, follow the path below
 
-# Step-1.
-# Create SSH keys
+## **Step-1.**
+## Create SSH keys
 
 Open a terminal and use the ssh-keygen command with the -C flag to create a new SSH key pair.
 
@@ -12,8 +12,8 @@ ssh-keygen -t rsa -f ~/Desktop/Pem_file/test_ssh_key -C test_user -b 2048
 	-f = file (test_ssh_key: name for your SSH key file)
 	-b = bit (Here we used 2048 bits. NB: You can also use 4096 bits)
 	~/Desktop/Pem_file/: It's path where we stored key pair
-# Step-2. 
-# Add SSH keys to VM
+## **Step-2.** 
+## Add SSH keys to VM
 1. Navigate to VM instance page
 2. Select the VM where you waould like to add ssh
 3. Click on "Edit" from  top of the Google Cloud Console
@@ -22,8 +22,8 @@ ssh-keygen -t rsa -f ~/Desktop/Pem_file/test_ssh_key -C test_user -b 2048
 6. Copy your public key from your machine and Add it into the text box
 5. Save 
 
-# Step-3.
-# Now login to your VM  
+## **Step-3.**
+## Now login to your VM  
 ssh -i test_ssh_key test_user@35.221.116.28
 	
 	i =  identity_file (test_ssh_key = private key)
